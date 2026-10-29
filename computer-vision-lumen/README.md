@@ -47,11 +47,7 @@ misma carpeta, así que no hay que descargar nada.
 
 - `histo_1.jpg` y `histo_2.jpg`: dos cortes de tejido teñido con lúmenes de distinto tamaño.
 
-## Nota
-
-El notebook nació como ejercicio de un curso de visión por computador. El análisis y el código se
-conservan tal como se resolvieron; solo se cambió el nombre del archivo y el título para describir lo
-que hace.
+## Notas
 
 `scikit-image` se fija por debajo de 0.26 porque esa versión renombró varios descriptores de
 `regionprops` que el notebook usa (`bbox_area`, `convex_area`, `equivalent_diameter`, etc.).
