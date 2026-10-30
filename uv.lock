@@ -1333,10 +1333,14 @@ dependencies = [
     { name = "ipykernel" },
     { name = "jupyterlab" },
     { name = "matplotlib" },
+    { name = "networkx", version = "3.6.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
+    { name = "networkx", version = "3.7", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
     { name = "numpy", version = "2.5.4", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.12'" },
     { name = "opencv-python" },
+    { name = "packaging" },
     { name = "pandas" },
+    { name = "scikit-fuzzy" },
     { name = "scikit-image" },
     { name = "scikit-learn" },
     { name = "scipy", version = "1.17.1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.12'" },
@@ -1354,9 +1358,12 @@ requires-dist = [
     { name = "ipykernel", specifier = ">=6.29" },
     { name = "jupyterlab", specifier = ">=4.3" },
     { name = "matplotlib", specifier = ">=3.9" },
+    { name = "networkx", specifier = ">=3.3" },
     { name = "numpy", specifier = ">=2.0" },
     { name = "opencv-python", specifier = ">=4.10" },
+    { name = "packaging", specifier = ">=24.0" },
     { name = "pandas", specifier = ">=2.2" },
+    { name = "scikit-fuzzy", specifier = ">=0.5" },
     { name = "scikit-image", specifier = ">=0.24,<0.26" },
     { name = "scikit-learn", specifier = ">=1.5" },
     { name = "scipy", specifier = ">=1.14" },
@@ -2565,6 +2572,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/ba/a5/9672e532fe02cd3b92c78cfd8743abca939d96853006c63835009a1ecb6f/rpds_py-2026.9.1-pp312-pypy312_pp73-musllinux_1_2_x86_64.whl", hash = "sha256:6b9bf3135b4ad5981df9a73d71a35272d650a2985ae9c2746357b24d59de2448", size = 591126, upload-time = "2026-10-04T16:32:29.274Z" },
     { url = "https://files.pythonhosted.org/packages/80/ef/3a9f8e4279c7920af561deed4cb7ebebed2794a8f608cf404d5eef14a105/rpds_py-2026.9.1-pp312-pypy312_pp80-macosx_10_12_x86_64.whl", hash = "sha256:56c6952a9b15047466d0c2347c446a761d4527f89976156341e68f0ce5cc08b0", size = 357108, upload-time = "2026-10-04T16:32:31.641Z" },
     { url = "https://files.pythonhosted.org/packages/b7/55/4b2fa381a583760aea5c92841e4e928a358e1c6511b129219e9c2826a226/rpds_py-2026.9.1-pp312-pypy312_pp80-macosx_11_0_arm64.whl", hash = "sha256:b242c27c8f836305a4a72df9cdd564386ac57b807bd252a063223331c9316b37", size = 346877, upload-time = "2026-10-04T16:32:34.061Z" },
+]
+
+[[package]]
+name = "scikit-fuzzy"
+version = "0.5.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/98/1c/eeffa327ecf44e11fdd312b2b8cf5a7ac7f6cd2956646980893dc4aa56d8/scikit_fuzzy-0.5.0.tar.gz", hash = "sha256:2ee5340523aa7635ca568b9d8029c7738d05f9ea550fc89d4054b4cb50f34e7f", size = 958406, upload-time = "2024-08-22T22:20:45.697Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9d/06/da70811f95c4a3bada55e7b20c957548a4d9bc21150916f0c024286d67c7/scikit_fuzzy-0.5.0-py2.py3-none-any.whl", hash = "sha256:e456c365146bc5c58d9f593f4127ac783112e2daf89f87b12c6ef3c38e4087dd", size = 920817, upload-time = "2024-08-22T22:20:43.447Z" },
 ]
 
 [[package]]

@@ -1,16 +1,19 @@
 [project]
 name = "machine-learning-demos"
 version = "0.1.0"
-description = "Demos de aprendizaje automático y visión por computador en Python"
+description = "Demos de IA: aprendizaje automático, visión por computador y lógica difusa en Python"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "ipykernel>=6.29",
     "jupyterlab>=4.3",
     "matplotlib>=3.9",
+    "networkx>=3.3",
     "numpy>=2.0",
     "opencv-python>=4.10",
+    "packaging>=24.0",
     "pandas>=2.2",
+    "scikit-fuzzy>=0.5",
     "scikit-image>=0.24,<0.26",
     "scikit-learn>=1.5",
     "scipy>=1.14",
