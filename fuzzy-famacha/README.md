@@ -68,7 +68,8 @@ Mismo diseño y mismas reglas, distinto motor. La diferencia está documentada e
   `scikit-fuzzy`, los cinco casos y el cálculo manual de KT001-26 paso a paso (fuzzificación,
   activación, recorte, agregación y centroide).
 - **`modus-ponens-generalizado.ipynb`**: anexo con el otro método de inferencia, el que se usó en la
-  implementación en FuzzyCLIPS.
+  implementación en FuzzyCLIPS. Incluye los recortes del cálculo a mano: la regla, la matriz de
+  implicación, el hecho, la composición y el conjunto de salida.
   Una regla, implicación de Kleene-Dienes y composición max-min, que produce el conjunto de salida
   `[0.6, 0.5, 0.4]` para desparasitar, a criterio y no desparasitar.
 
