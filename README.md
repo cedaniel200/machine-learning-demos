@@ -1,8 +1,22 @@
 # machine-learning-demos
 
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)
+![uv](https://img.shields.io/badge/uv-managed-261230?style=flat-square)
+![Jupyter](https://img.shields.io/badge/Jupyter-notebooks-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![Demos](https://img.shields.io/badge/demos-5-blueviolet?style=flat-square)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)](LICENSE)
+
 Colección de demos de IA y análisis de datos en Python: aprendizaje automático, visión por computador,
 aprendizaje profundo, lógica difusa y estadística aplicada. Cada carpeta es un caso independiente, con
 su propio README, sus datos y un notebook que se ejecuta de principio a fin.
+
+## Table of Contents
+
+- [Demos](#demos)
+- [Requisitos](#requisitos)
+- [Cómo ejecutar](#cómo-ejecutar)
+- [Estructura](#estructura)
+- [Licencia](#licencia)
 
 ## Demos
 
@@ -14,19 +28,39 @@ su propio README, sus datos y un notebook que se ejecuta de principio a fin.
 | [eda-anova-regression](eda-anova-regression/) | Análisis exploratorio, ANOVA y regresión sobre sesiones de lectura | pandas, statsmodels, SciPy |
 | [image-classification-transfer-learning](image-classification-transfer-learning/) | Clasificación de imágenes desde cero, con MobileNetV2 y con VGG16 | TensorFlow, Keras |
 
+Cada demo explica en su README el problema, los datos, las decisiones y los resultados.
+
 ## Requisitos
 
-- [uv](https://docs.astral.sh/uv/) — gestiona el entorno y las dependencias del proyecto.
+- [uv](https://docs.astral.sh/uv/) — gestiona el entorno y las dependencias.
+- Python 3.12 (uv lo instala si hace falta).
+
+La demo de clasificación de imágenes necesita además:
+
+```bash
+uv sync --extra deep-learning
+```
+
+Ese extra instala TensorFlow, `kagglehub` y `seaborn`. También requiere credenciales de Kaggle y, para
+entrenar con comodidad, una GPU; el README de la demo explica cómo ejecutarla en Colab.
 
 ## Cómo ejecutar
+
+### Entorno base
 
 ```bash
 uv sync
 uv run jupyter lab
 ```
 
-Abre el notebook de la demo que quieras probar y ejecútalo de arriba abajo. Cada carpeta explica sus
-propios pasos y resultados.
+Abre el notebook de la demo que quieras probar y ejecútalo de arriba abajo.
+
+### Demo de deep learning
+
+```bash
+uv sync --extra deep-learning
+uv run jupyter lab
+```
 
 ## Estructura
 
@@ -37,5 +71,10 @@ machine-learning-demos/
 ├── fuzzy-famacha/           # sistema difuso de desparasitación en ovinos
 ├── eda-anova-regression/    # EDA, ANOVA y regresión sobre sesiones de lectura
 ├── image-classification-transfer-learning/  # desde cero, MobileNetV2 y VGG16
-└── pyproject.toml           # dependencias compartidas por todas las demos
+├── pyproject.toml           # dependencias compartidas
+└── uv.lock                  # entorno reproducible
 ```
+
+## Licencia
+
+[MIT](LICENSE)
