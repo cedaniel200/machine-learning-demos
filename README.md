@@ -1,8 +1,8 @@
 # machine-learning-demos
 
 Colección de demos de IA y análisis de datos en Python: aprendizaje automático, visión por computador,
-lógica difusa y estadística aplicada. Cada carpeta es un caso independiente, con su propio README, sus
-datos y un notebook que se ejecuta de principio a fin.
+aprendizaje profundo, lógica difusa y estadística aplicada. Cada carpeta es un caso independiente, con
+su propio README, sus datos y un notebook que se ejecuta de principio a fin.
 
 ## Demos
 
@@ -12,6 +12,7 @@ datos y un notebook que se ejecuta de principio a fin.
 | [model-selection](model-selection/) | Comparación de modelos de regresión y clasificación con búsqueda de hiperparámetros | scikit-learn, pandas |
 | [fuzzy-famacha](fuzzy-famacha/) | Recomendación de desparasitación en ovinos con lógica difusa (Mamdani) | scikit-fuzzy, NumPy |
 | [eda-anova-regression](eda-anova-regression/) | Análisis exploratorio, ANOVA y regresión sobre sesiones de lectura | pandas, statsmodels, SciPy |
+| [image-classification-transfer-learning](image-classification-transfer-learning/) | Clasificación de imágenes desde cero, con MobileNetV2 y con VGG16 | TensorFlow, Keras |
 
 ## Requisitos
 
@@ -35,5 +36,6 @@ machine-learning-demos/
 ├── model-selection/         # comparación de modelos con GridSearchCV
 ├── fuzzy-famacha/           # sistema difuso de desparasitación en ovinos
 ├── eda-anova-regression/    # EDA, ANOVA y regresión sobre sesiones de lectura
+├── image-classification-transfer-learning/  # desde cero, MobileNetV2 y VGG16
 └── pyproject.toml           # dependencias compartidas por todas las demos
 ```
