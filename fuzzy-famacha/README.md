@@ -45,12 +45,12 @@ rosada.
 | KT004-26 | 3.0 / 2.1 | 4.407 | sí |
 | KT005-26 | 3.0 / 3.8 | 3.000 | a criterio |
 
-## Comparación con la implementación original
+## Comparación con la implementación en FuzzyCLIPS
 
-El trabajo original se resolvió en **FuzzyCLIPS**. Los casos numéricos coinciden; los que usan
-etiquetas lingüísticas no, porque FuzzyCLIPS compara el conjunto borroso de la etiqueta con el de
-cada regla en vez de convertirla en un número. Esa compatibilidad activa débilmente reglas que un
-valor numérico no activaría.
+La primera versión de este sistema se implementó en **FuzzyCLIPS**. Los casos numéricos coinciden;
+los que usan etiquetas lingüísticas no, porque FuzzyCLIPS compara el conjunto borroso de la etiqueta
+con el de cada regla en vez de convertirla en un número. Esa compatibilidad activa débilmente reglas
+que un valor numérico no activaría.
 
 | Oveja | FuzzyCLIPS | Python |
 |---|---|---|
@@ -67,7 +67,8 @@ Mismo diseño y mismas reglas, distinto motor. La diferencia está documentada e
 - **`fuzzy-famacha.ipynb`**: el sistema completo. Funciones de pertenencia, reglas, inferencia con
   `scikit-fuzzy`, los cinco casos y el cálculo manual de KT001-26 paso a paso (fuzzificación,
   activación, recorte, agregación y centroide).
-- **`modus-ponens-generalizado.ipynb`**: anexo con el otro método de inferencia del trabajo original.
+- **`modus-ponens-generalizado.ipynb`**: anexo con el otro método de inferencia, el que se usó en la
+  implementación en FuzzyCLIPS.
   Una regla, implicación de Kleene-Dienes y composición max-min, que produce el conjunto de salida
   `[0.6, 0.5, 0.4]` para desparasitar, a criterio y no desparasitar.
 
