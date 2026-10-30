@@ -1,7 +1,8 @@
 # machine-learning-demos
 
-Colección de demos de aprendizaje automático y visión por computador en Python. Cada carpeta es un
-caso independiente, con su propio README, sus datos y un notebook que se ejecuta de principio a fin.
+Colección de demos de IA en Python: aprendizaje automático, visión por computador y lógica difusa.
+Cada carpeta es un caso independiente, con su propio README, sus datos y un notebook que se ejecuta de
+principio a fin.
 
 ## Demos
 
@@ -9,6 +10,7 @@ caso independiente, con su propio README, sus datos y un notebook que se ejecuta
 |---|---|---|
 | [computer-vision-lumen](computer-vision-lumen/) | Detección y caracterización de lúmenes en imágenes histológicas | OpenCV, scikit-image, NumPy |
 | [model-selection](model-selection/) | Comparación de modelos de regresión y clasificación con búsqueda de hiperparámetros | scikit-learn, pandas |
+| [fuzzy-famacha](fuzzy-famacha/) | Recomendación de desparasitación en ovinos con lógica difusa (Mamdani) | scikit-fuzzy, NumPy |
 
 ## Requisitos
 
@@ -30,5 +32,6 @@ propios pasos y resultados.
 machine-learning-demos/
 ├── computer-vision-lumen/   # detección de lúmenes en imágenes histológicas
 ├── model-selection/         # comparación de modelos con GridSearchCV
+├── fuzzy-famacha/           # sistema difuso de desparasitación en ovinos
 └── pyproject.toml           # dependencias compartidas por todas las demos
 ```
