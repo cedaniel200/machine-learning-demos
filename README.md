@@ -8,6 +8,7 @@ caso independiente, con su propio README, sus datos y un notebook que se ejecuta
 | Demo | Qué muestra | Stack |
 |---|---|---|
 | [computer-vision-lumen](computer-vision-lumen/) | Detección y caracterización de lúmenes en imágenes histológicas | OpenCV, scikit-image, NumPy |
+| [model-selection](model-selection/) | Comparación de modelos de regresión y clasificación con búsqueda de hiperparámetros | scikit-learn, pandas |
 
 ## Requisitos
 
@@ -28,5 +29,6 @@ propios pasos y resultados.
 ```
 machine-learning-demos/
 ├── computer-vision-lumen/   # detección de lúmenes en imágenes histológicas
+├── model-selection/         # comparación de modelos con GridSearchCV
 └── pyproject.toml           # dependencias compartidas por todas las demos
 ```
