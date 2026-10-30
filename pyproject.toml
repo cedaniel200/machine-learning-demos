@@ -1,7 +1,7 @@
 [project]
 name = "machine-learning-demos"
 version = "0.1.0"
-description = "Demos de IA y análisis de datos en Python"
+description = "Demos de IA, deep learning y análisis de datos en Python"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -24,3 +24,10 @@ dependencies = [
 
 [dependency-groups]
 dev = ["nbconvert>=7.16"]
+
+[project.optional-dependencies]
+deep-learning = [
+    "kagglehub>=0.3",
+    "seaborn>=0.13",
+    "tensorflow>=2.16",
+]
