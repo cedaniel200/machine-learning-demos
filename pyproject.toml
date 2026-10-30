@@ -1,7 +1,7 @@
 [project]
 name = "machine-learning-demos"
 version = "0.1.0"
-description = "Demos de IA: aprendizaje automático, visión por computador y lógica difusa en Python"
+description = "Demos de IA y análisis de datos en Python"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
@@ -13,10 +13,12 @@ dependencies = [
     "opencv-python>=4.10",
     "packaging>=24.0",
     "pandas>=2.2",
+    "pyarrow>=17.0",
     "scikit-fuzzy>=0.5",
     "scikit-image>=0.24,<0.26",
     "scikit-learn>=1.5",
     "scipy>=1.14",
+    "statsmodels>=0.14",
     "tabulate>=0.9",
 ]
 
